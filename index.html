@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>Calcola il prezzo del tuo biglietto</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div class="card">
+            <div class="fields">
+                <div>
+                    <label for="nome">Nome Cognome</label>
+                    <input id="nome" type="text" placeholder="Es. Mario Rossi">
+                </div>
+                <div>
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" min="1" step="any" placeholder="Es. 10">
+                </div>
+                <div>
+                    <label for="eta">Fascia d'età</label>
+                    <select id="eta">
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="btns">
+                <button id="genera">Genera</button>
+                <button id="annulla">Annulla</button>
+            </div>
+
+            <div class="err" id="err"></div>
+        </div>
+
+        <div id="ticket">
+            <h2>Il tuo biglietto</h2>
+            <div class="card">
+                <div class="sub">Dettaglio passeggeri</div>
+                <div class="tk">
+                    <div class="name">
+                        <b>Nome passeggero</b>
+                        <span id="tNome"></span>
+                    </div>
+                    <div class="det">
+                        <div class="row h">
+                            <div>Offerta</div>
+                            <div>Carrozza</div>
+                            <div>Codice CP</div>
+                            <div>Costo biglietto</div>
+                        </div>
+                        <div class="row v">
+                            <div id="tOff"></div>
+                            <div id="tCar"></div>
+                            <div id="tCod"></div>
+                            <div id="tPrezzo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
