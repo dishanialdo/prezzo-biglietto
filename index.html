@@ -16,15 +16,15 @@
             <div class="fields">
                 <div>
                     <label for="nome">Nome Cognome</label>
-                    <input id="nome" type="text" placeholder="Es. Mario Rossi">
+                    <input id="nome" type="text" placeholder="Es. Mario Rossi" autocomplete="off">
                 </div>
                 <div>
                     <label for="km">Km da percorrere</label>
-                    <input id="km" type="number" min="1" step="any" placeholder="Es. 10">
+                    <input id="km" type="number" min="1" step="any" placeholder="Es. 10" autocomplete="off">
                 </div>
                 <div>
                     <label for="eta">Fascia d'età</label>
-                    <select id="eta">
+                    <select id="eta" autocomplete="off">
                         <option value="maggiorenne">Maggiorenne</option>
                         <option value="minorenne">Minorenne</option>
                         <option value="over65">Over 65</option>
@@ -33,8 +33,8 @@
             </div>
 
             <div class="btns">
-                <button id="genera">Genera</button>
-                <button id="annulla">Annulla</button>
+                <button id="btn-Calcola">Calcola</button>
+                <button id="btn-Annulla">Annulla</button>
             </div>
 
             <div class="err" id="err"></div>
@@ -69,4 +69,4 @@
     </div>
 </body>
 
-</html>
+</html>
